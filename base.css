@@ -1,0 +1,156 @@
+/* ==========================================
+   Archivum
+   Base Style
+========================================== */
+
+
+/* ==========================================
+   Body
+========================================== */
+
+body {
+
+    min-height: 100vh;
+
+    background:
+
+        var(--bg-main);
+
+
+    color:
+
+        var(--text-main);
+
+
+   font-family:
+
+    var(--font-main);
+
+
+    font-size:
+
+        14px;
+
+
+    line-height:
+
+        1.6;
+
+}
+
+
+
+/* ==========================================
+   App
+========================================== */
+
+#app {
+
+    background:
+
+        var(--bg-main);
+
+}
+
+
+
+/* ==========================================
+   Text
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-weight:
+
+        600;
+
+
+    color:
+
+        var(--text-main);
+
+}
+
+
+p {
+
+    color:
+
+        var(--text-sub);
+
+}
+
+
+
+/* ==========================================
+   Inputs
+========================================== */
+
+input,
+textarea {
+
+    font-family:
+
+        inherit;
+
+}
+
+
+
+/* ==========================================
+   Selection
+========================================== */
+
+::selection {
+
+    background:
+
+        var(--accent);
+
+
+    color:
+
+        #ffffff;
+
+}
+
+/* ==========================================
+   Pastel Blue Font
+========================================== */
+
+body.pastel-blue-theme {
+
+    font-family:
+
+        "Zen Maru Gothic",
+        "Noto Sans JP",
+        "Hiragino Sans",
+        "Yu Gothic",
+        sans-serif;
+
+}
+
+body.pastel-blue-theme {
+
+    background:
+
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(190, 230, 250, 0.45),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(210, 235, 250, 0.5),
+            transparent 35%
+        ),
+
+        var(--bg-main);
+
+}

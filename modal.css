@@ -1,0 +1,342 @@
+/* ==========================================
+   Archivum
+   Modal
+========================================== */
+
+
+/* ==========================================
+   Modal Root
+========================================== */
+
+#modal-root {
+
+    position: relative;
+
+}
+
+
+
+/* ==========================================
+   Modal Background
+========================================== */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    background:
+
+        rgba(0,0,0,0.55);
+
+
+    z-index: 1000;
+
+}
+
+
+
+/* ==========================================
+   Hidden
+========================================== */
+
+.modal.hidden {
+
+    display: none;
+
+}
+
+
+
+/* ==========================================
+   Modal Window
+========================================== */
+
+.modal-window {
+
+    width:
+
+        min(480px, 90vw);
+
+
+    max-height:
+
+        90vh;
+
+
+    display:
+
+        flex;
+
+
+    flex-direction:
+
+        column;
+
+
+    background:
+
+        var(--bg-panel);
+
+
+    border:
+
+        1px solid var(--border);
+
+
+    border-radius:
+
+        var(--radius-lg);
+
+
+    overflow:
+
+        hidden;
+
+}
+
+
+
+/* ==========================================
+   Header
+========================================== */
+
+.modal-header {
+
+    display:
+
+        flex;
+
+
+    align-items:
+
+        center;
+
+
+    justify-content:
+
+        space-between;
+
+
+    padding:
+
+        18px 20px;
+
+
+    border-bottom:
+
+        1px solid var(--border);
+
+}
+
+
+.modal-header h2 {
+
+    font-size:
+
+        18px;
+
+}
+
+
+
+/* ==========================================
+   Body
+========================================== */
+
+.modal-body {
+
+    display:
+
+        flex;
+
+
+    flex-direction:
+
+        column;
+
+
+    gap:
+
+        16px;
+
+
+    padding:
+
+        20px;
+
+
+    overflow-y:
+
+        auto;
+
+}
+
+
+.modal-body label {
+
+    display:
+
+        flex;
+
+
+    flex-direction:
+
+        column;
+
+
+    gap:
+
+        6px;
+
+
+    color:
+
+        var(--text-sub);
+
+
+    font-size:
+
+        13px;
+
+}
+
+
+
+/* ==========================================
+   Inputs
+========================================== */
+
+.modal-body input,
+.modal-body textarea {
+
+    width:
+
+        100%;
+
+
+    padding:
+
+        10px 12px;
+
+
+    border-radius:
+
+        var(--radius-sm);
+
+
+    border:
+
+        1px solid var(--border);
+
+
+    background:
+
+        var(--bg-card);
+
+
+    color:
+
+        var(--text-main);
+
+
+    outline:
+
+        none;
+
+}
+
+
+.modal-body textarea {
+
+    min-height:
+
+        120px;
+
+}
+
+
+.modal-body input:focus,
+.modal-body textarea:focus {
+
+    border-color:
+
+        var(--accent);
+
+}
+
+
+
+/* ==========================================
+   Footer
+========================================== */
+
+.modal-footer {
+
+    display:
+
+        flex;
+
+
+    justify-content:
+
+        flex-end;
+
+
+    gap:
+
+        10px;
+
+
+    padding:
+
+        16px 20px;
+
+
+    border-top:
+
+        1px solid var(--border);
+
+}
+
+
+.modal-footer button {
+
+    height:
+
+        36px;
+
+
+    padding:
+
+        0 16px;
+
+
+    border-radius:
+
+        var(--radius-sm);
+
+
+    color:
+
+        var(--text-main);
+
+}
+
+
+.modal-footer .primary-button {
+
+    color:
+
+        #ffffff;
+
+}

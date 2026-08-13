@@ -1,0 +1,169 @@
+/* ==========================================
+   Archivum
+   Variables
+========================================== */
+
+
+/* ==========================================
+   Default Theme
+========================================== */
+
+:root {
+
+    /* Colors */
+
+    --bg-main: #0f1713;
+
+    --bg-panel: #16221b;
+
+    --bg-card: #1d2b22;
+
+
+    --text-main: #f2f5f3;
+
+    --text-sub: #9caea2;
+
+
+    --accent: #6FAE8D;
+
+    --accent-soft:
+        rgba(111,174,141,0.18);
+
+
+    --border:
+        rgba(255,255,255,0.08);
+
+
+    /* Radius */
+
+    --radius-sm: 8px;
+
+    --radius-md: 12px;
+
+    --radius-lg: 18px;
+
+
+    /* Font */
+
+    --font-main:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+
+    /* Animation */
+
+    --transition-fast:
+        0.2s ease;
+
+}
+
+
+/* ==========================================
+   Dark Theme
+========================================== */
+
+body.dark-theme {
+
+    --bg-main: #050505;
+
+    --bg-panel: #0b0b0b;
+
+    --bg-card: #121212;
+
+
+    --text-main: #f5f5f5;
+
+    --text-sub: #999999;
+
+
+    --accent: #8fa8ff;
+
+    --accent-soft:
+        rgba(143,168,255,0.16);
+
+
+    --border:
+        rgba(255,255,255,0.07);
+
+}
+
+
+/* ==========================================
+   Pastel Blue Theme
+========================================== */
+
+body.pastel-blue-theme {
+
+    --bg-main: #eef9ff;
+
+    --bg-panel: #f7fcff;
+
+    --bg-card: #ffffff;
+
+
+    --text-main: #405568;
+
+    --text-sub: #7d94a6;
+
+
+    --accent: #8bc9e8;
+
+    --accent-soft:
+        rgba(139,201,232,0.20);
+
+
+    --border:
+        rgba(110,170,200,0.18);
+
+
+    /* Soft & fluffy */
+
+    --radius-sm: 10px;
+
+    --radius-md: 16px;
+
+    --radius-lg: 22px;
+
+
+    --font-main:
+        "Zen Maru Gothic",
+        system-ui,
+        sans-serif;
+
+}
+/* ==========================================
+   Pastel Blue Theme
+========================================== */
+
+body.pastel-blue-theme {
+
+    --bg-main: #eef8ff;
+
+    --bg-panel: #f8fcff;
+
+    --bg-card: #ffffff;
+
+
+    --text-main: #456078;
+
+    --text-sub: #7f9aae;
+
+
+    --accent: #8fc9e8;
+
+    --accent-soft: rgba(143, 201, 232, 0.22);
+
+
+    --border: rgba(143, 201, 232, 0.28);
+
+
+    --radius-sm: 12px;
+
+    --radius-md: 18px;
+
+    --radius-lg: 26px;
+
+}

@@ -1,0 +1,215 @@
+/* ==========================================
+   Archivum
+   Navigation (HTML Compatible)
+========================================== */
+
+
+/* ==========================================
+   Header Brand
+========================================== */
+
+.header-brand {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.brand-title {
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.05em;
+
+}
+
+
+.brand-subtitle {
+
+    margin-top: 2px;
+
+    font-size: 11px;
+
+    color: var(--text-sub);
+
+}
+
+
+
+/* ==========================================
+   Header Search
+========================================== */
+
+.header-search {
+
+    flex: 1;
+
+    max-width: 420px;
+
+    margin: 0 32px;
+
+}
+
+
+.header-search input {
+
+    width: 100%;
+
+    height: 38px;
+
+
+    padding: 0 16px;
+
+
+    border-radius:
+
+        var(--radius-md);
+
+
+    border:
+
+        1px solid var(--border);
+
+
+    background:
+
+        var(--bg-card);
+
+
+    color:
+
+        var(--text-main);
+
+
+    outline: none;
+
+}
+
+    
+    /* ==========================================
+   Sidebar Direction
+========================================== */
+
+#app-sidebar {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.sidebar-navigation {
+
+    flex: 1;
+
+}
+
+    /* ==========================================
+   Sidebar Fix
+========================================== */
+
+#app-sidebar {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.sidebar-header {
+
+    width: 100%;
+
+    flex-shrink: 0;
+
+}
+
+
+.sidebar-navigation {
+
+    width: 100%;
+
+}
+
+
+.project-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    width: 100%;
+
+}
+
+
+.project-item {
+
+    width: 100%;
+
+}
+
+/* ==========================================
+   Sidebar Text Fix
+========================================== */
+
+.sidebar-title {
+
+    color:
+
+        var(--text-main);
+
+}
+
+.project-item button {
+
+    color:
+
+        var(--text-sub);
+
+}
+
+.project-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.project-select-button {
+
+    flex: 1;
+
+    text-align: left;
+
+}
+
+
+.project-delete-button {
+
+    width: 32px;
+
+    height: 32px;
+
+    opacity: 0.6;
+
+}
+
+
+.project-delete-button:hover {
+
+    opacity: 1;
+
+}

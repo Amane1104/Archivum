@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <!-- =============================================
+         Meta
+    ============================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Archivum - Creative World Archive">
+
+    <title>Archivum</title>
+
+    <!-- =============================================
+         CSS
+    ============================================== -->
+
+    <link
+        rel="stylesheet"
+        href="./css/reset.css">
+
+    <link
+        rel="stylesheet"
+        href="./css/variables.css">
+
+    <link
+        rel="stylesheet"
+        href="./css/base.css">
+
+    <link
+        rel="stylesheet"
+        href="./css/layout.css">
+
+    <link
+        rel="stylesheet"
+        href="./css/navigation.css">
+
+    <link
+        rel="stylesheet"
+        href="./css/components.css">
+
+    <link
+        rel="stylesheet"
+        href="./css/modal.css">
+
+    <link
+        rel="stylesheet"
+        href="./css/animation.css">
+
+    <link
+        rel="stylesheet"
+        href="./css/responsive.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- =============================================
+         Application
+    ============================================== -->
+
+    <div id="app">
+
+        <!-- =============================================
+             Header
+        ============================================== -->
+
+        <header id="app-header">
+<!-- =============================================
+     Brand
+============================================= -->
+
+<div class="header-brand">
+
+    <h1 class="brand-title">
+
+        Archivum
+
+    </h1>
+
+    <p class="brand-subtitle">
+
+        Every world deserves an archive.
+
+    </p>
+
+</div>
+
+<!-- =============================================
+     Search
+============================================= -->
+
+<div class="header-search">
+
+    <input
+        type="search"
+        id="global-search"
+        placeholder="創作を検索..."
+        autocomplete="off">
+
+
+    <div
+        id="global-search-results"
+        class="global-search-results hidden">
+
+    </div>
+
+</div>
+            
+<!-- =============================================
+     Quick Actions
+============================================= -->
+
+<div class="header-actions">
+
+    <button
+        id="new-project-button"
+        class="primary-button"
+        type="button">
+
+        ＋ 創作
+
+    </button>
+
+    <button
+    id="edit-project-button"
+    class="icon-button"
+    type="button">
+
+    ✏️
+
+    </button>
+    
+    <button
+        id="save-button"
+        class="icon-button"
+        type="button"
+        title="保存">
+
+        💾
+
+    </button>
+
+    <button
+        id="settings-button"
+        class="icon-button"
+        type="button"
+        title="設定">
+
+        ⚙
+
+    </button>
+
+</div>
+
+</header>
+
+<!-- =============================================
+     Main Layout
+============================================= -->
+
+<div id="app-layout">
+
+    <!-- =============================================
+         Sidebar
+    ============================================== -->
+
+    <aside id="app-sidebar">
+
+        <div class="sidebar-header">
+
+            <h2 class="sidebar-title">
+
+                創作一覧
+
+            </h2>
+
+            <button
+                id="sidebar-add-project"
+                class="icon-button"
+                type="button"
+                title="新しい創作">
+
+                ＋
+
+            </button>
+
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <ul class="project-list">
+
+                <li class="project-item active">
+
+                    <button type="button">
+
+                        📚 メイン創作
+
+                    </button>
+
+                </li>
+
+                <li class="project-item">
+
+                    <button type="button">
+
+                        🌌 Astaroth
+
+                    </button>
+
+                </li>
+
+                <li class="project-item">
+
+                    <button type="button">
+
+                        ➕ 新しい創作
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+    <!-- =============================================
+         Workspace
+    ============================================== -->
+
+    <main id="app-workspace">
+
+<!-- =============================================
+     Project Home
+============================================= -->
+
+<section
+    id="project-home"
+    class="project-home"
+>
+
+    <!-- =============================================
+         Project Header
+    ============================================== -->
+
+    <header class="project-header">
+
+        <h2 id="project-title">
+
+            📚 メイン創作
+
+        </h2>
+
+        <p id="project-subtitle">
+
+            Every world deserves an archive.
+
+        </p>
+
+    </header>
+
+    <!-- =============================================
+         Project Information
+    ============================================== -->
+
+    <section class="project-meta">
+
+        <div class="meta-item">
+
+            <span class="meta-label">
+
+                更新日
+
+            </span>
+
+           <span
+    class="meta-value"
+    id="project-updated-date">
+
+    2026-08-07
+
+</span>
+
+        </div>
+
+        <div class="meta-item">
+
+            <span class="meta-label">
+
+                ステータス
+
+            </span>
+
+            <span class="meta-value">
+
+                🟢 執筆中
+
+            </span>
+
+        </div>
+
+        <div class="meta-item">
+
+            <span class="meta-label">
+
+                タグ
+
+            </span>
+
+            <span class="meta-value">
+
+                Fantasy
+
+            </span>
+
+        </div>
+
+    </section>
+
+    <!-- =============================================
+         Overview
+    ============================================== -->
+
+    <section class="project-section">
+
+        <button
+            class="section-header"
+            type="button">
+
+            <span>
+
+                ▼ 概要
+
+            </span>
+
+        </button>
+
+    <div class="section-content">
+        
+        <p id="project-description">
+
+        この作品の概要がここに表示されます。
+        後から自由に編集できるようになります。
+
+        </p>
+
+    </div>
+
+    </section>
+
+    <!-- =============================================
+         Recent Activity
+    ============================================== -->
+
+    <section class="project-section">
+
+        <button
+            class="section-header"
+            type="button">
+
+            <span>
+
+                ▼ 最近の更新
+
+            </span>
+
+        </button>
+
+        <div
+    class="section-content"
+    id="recent-activity-list">
+
+</div>
+
+    </section>
+
+    <!-- =============================================
+         Notes
+    ============================================== -->
+
+    <section class="project-section" id="notes-section">
+
+    <button class="section-header" type="button">
+
+        <span>▶ メモ</span>
+
+        <span
+            class="section-count"
+            id="note-count">
+
+            0
+
+        </span>
+
+    </button>
+
+
+    <div
+        id="note-list"
+        class="section-content">
+
+    </div>
+
+
+    <button
+        id="add-note-button"
+        class="primary-button"
+        type="button">
+
+        ＋ メモ
+
+    </button>
+
+</section>
+
+
+<!-- =============================================
+     Characters
+============================================= -->
+
+<section
+    class="project-section"
+    id="characters-section">
+
+    <button
+        class="section-header"
+        type="button">
+
+        <span>
+            ▶ キャラクター
+        </span>
+
+        <span
+            class="section-count"
+            id="character-count">
+
+            0
+
+        </span>
+
+    </button>
+
+
+    <div
+        class="section-content"
+        id="character-list">
+
+    </div>
+
+
+    <button
+        id="add-character-button"
+        class="primary-button"
+        type="button">
+
+        ＋ キャラクター
+
+    </button>
+
+</section>
+
+
+
+  <!-- =============================================
+     World Settings
+============================================= -->
+
+<section
+    class="project-section"
+    id="world-section">
+
+    <button
+        class="section-header"
+        type="button">
+
+        <span>
+
+            ▶ 世界設定
+
+        </span>
+
+        <span
+            class="section-count"
+            id="world-count">
+
+            0
+
+        </span>
+
+    </button>
+
+
+    <div
+        id="world-list"
+        class="section-content">
+
+    </div>
+
+
+    <button
+        id="add-world-button"
+        class="primary-button"
+        type="button">
+
+        ＋ 世界設定
+
+    </button>
+
+</section>
+    
+
+
+    <!-- =============================================
+         Glossary
+    ============================================== -->
+
+  <section
+    class="project-section"
+    id="glossary-section">
+
+    <button
+        class="section-header"
+        type="button">
+
+        <span>▶ 用語集</span>
+
+        <span
+            class="section-count"
+            id="glossary-count">
+
+            0
+
+        </span>
+
+    </button>
+
+
+    <div
+        id="glossary-list"
+        class="section-content">
+
+    </div>
+
+
+    <button
+        id="add-glossary-button"
+        class="primary-button"
+        type="button">
+
+        ＋ 用語集
+
+    </button>
+
+</section>
+
+
+    <!-- =============================================
+         Assets
+    ============================================== -->
+
+   <section
+    class="project-section"
+    id="assets-section">
+
+    <button
+        class="section-header"
+        type="button">
+
+        <span>
+            ▶ 資料
+        </span>
+
+        <span
+            class="section-count"
+            id="asset-count">
+
+            0
+
+        </span>
+
+    </button>
+
+
+    <div
+        id="asset-list"
+        class="section-content">
+
+    </div>
+
+
+    <button
+        id="add-asset-button"
+        class="primary-button"
+        type="button">
+
+        ＋ 資料
+
+    </button>
+
+</section>
+
+<!-- =============================================
+     Modal Root
+============================================= -->
+
+<div id="modal-root">
+
+    <!-- =============================================
+     Character Modal
+============================================= -->
+
+<div
+    id="character-modal"
+    class="modal hidden">
+
+    <div class="modal-window">
+
+        <header class="modal-header">
+
+            <h2>
+
+                👤 キャラクター追加
+
+            </h2>
+
+        </header>
+
+
+        <div class="modal-body">
+
+            <label>
+
+                名前
+
+                <input
+                    id="character-name-input"
+                    type="text">
+
+            </label>
+
+
+            <label>
+
+                設定
+
+                <textarea
+                    id="character-profile-input">
+                </textarea>
+
+            </label>
+
+        </div>
+
+
+       <footer class="modal-footer">
+
+    <button
+        id="cancel-character-button"
+        type="button">
+
+        キャンセル
+
+    </button>
+
+
+    <button
+        id="create-character-button"
+        class="primary-button"
+        type="button">
+
+        追加
+
+    </button>
+
+</footer>
+
+    </div>
+
+</div>
+
+
+
+<!-- =============================================
+     Note Modal
+============================================= -->
+
+<div
+    id="note-modal"
+    class="modal hidden">
+
+    <div class="modal-window">
+
+        <header class="modal-header">
+
+            <h2>
+
+                📝 メモ追加
+
+            </h2>
+
+        </header>
+
+
+        <div class="modal-body">
+
+            <label>
+
+                タイトル
+
+                <input
+                    id="note-title-input"
+                    type="text">
+
+            </label>
+
+
+            <label>
+
+                内容
+
+                <textarea
+                    id="note-content-input">
+                </textarea>
+
+            </label>
+
+        </div>
+
+
+      <footer class="modal-footer">
+
+    <button
+        id="cancel-note-button"
+        type="button">
+
+        キャンセル
+
+    </button>
+
+
+    <button
+        id="create-note-button"
+        class="primary-button"
+        type="button">
+
+        保存
+
+    </button>
+
+</footer>
+
+    </div>
+
+</div>
+
+
+<!-- =============================================
+     Glossary Modal
+============================================= -->
+
+
+<div
+    id="glossary-modal"
+    class="modal hidden">
+
+    <div class="modal-window">
+
+        <header class="modal-header">
+
+            <h2>
+
+                📚 用語追加
+
+            </h2>
+
+        </header>
+
+
+        <div class="modal-body">
+
+            <label>
+
+                用語名
+
+                <input
+                    id="glossary-term-input"
+                    type="text">
+
+            </label>
+
+
+            <label>
+
+                読み
+
+                <input
+                    id="glossary-reading-input"
+                    type="text">
+
+            </label>
+
+
+            <label>
+
+                カテゴリ
+
+                <input
+                    id="glossary-category-input"
+                    type="text">
+
+            </label>
+
+
+            <label>
+
+                説明
+
+                <textarea
+                    id="glossary-content-input">
+                </textarea>
+
+            </label>
+
+        </div>
+
+
+      <footer class="modal-footer">
+
+    <button
+        id="cancel-glossary-button"
+        type="button">
+
+        キャンセル
+
+    </button>
+
+
+    <button
+        id="create-glossary-button"
+        class="primary-button"
+        type="button">
+
+        保存
+
+    </button>
+
+</footer>
+
+    </div>
+
+</div>
+        
+
+<!-- =============================================
+     World Menu Modal
+============================================= -->
+
+<div
+    id="world-menu-modal"
+    class="modal hidden">
+
+    <div class="modal-window">
+
+        <header class="modal-header">
+
+            <h2>
+
+                🌍 世界設定を追加
+
+            </h2>
+
+        </header>
+
+
+        <div class="modal-body">
+
+            <button
+                id="new-world-button"
+                class="primary-button"
+                type="button">
+
+                ✨ 新しく作る
+
+            </button>
+
+
+            <button
+                id="template-world-button"
+                class="secondary-button"
+                type="button">
+
+                📚 テンプレートから作る
+                （未実装）
+
+            </button>
+
+                </div>
+        </div>
+
+
+        <footer class="modal-footer">
+
+            <button
+                id="close-world-menu-button"
+                class="secondary-button"
+                type="button">
+
+                キャンセル
+
+            </button>
+
+        </footer>
+
+    </div>
+
+</div>
+
+
+<!-- ============================================
+        World Modal
+============================================= -->
+
+ <div
+    id="world-modal"
+    class="modal hidden">
+
+    <div class="modal-window">
+
+        <header class="modal-header">
+
+            <h2>
+                🌎 世界設定作成
+            </h2>
+
+        </header>
+
+
+        <div class="modal-body">
+
+            <label>
+
+                タイトル
+
+                <input
+                    id="world-title-input"
+                    type="text">
+
+            </label>
+
+
+            <label>
+
+                カテゴリ
+
+                <input
+                    id="world-category-input"
+                    type="text">
+
+            </label>
+
+
+            <label>
+
+                内容
+
+                <textarea
+                    id="world-content-input">
+                </textarea>
+
+            </label>
+
+        </div>
+
+
+        <footer class="modal-footer">
+
+            <button
+                id="create-world-button"
+                class="primary-button">
+
+                保存
+
+            </button>
+
+        </footer>
+
+    </div>
+
+</div>
+
+    <!-- =============================================
+     Asset Modal
+============================================= -->
+
+<div
+    id="asset-modal"
+    class="modal hidden">
+
+    <div class="modal-window">
+
+        <header class="modal-header">
+
+            <h2>
+
+                📎 資料追加
+
+            </h2>
+
+        </header>
+
+
+        <div class="modal-body">
+
+            <label>
+
+                タイトル
+
+                <input
+                    id="asset-title-input"
+                    type="text"
+                    placeholder="例：王都の地図">
+
+            </label>
+
+
+            <label>
+
+                カテゴリ
+
+                <input
+                    id="asset-category-input"
+                    type="text"
+                    placeholder="例：地図">
+
+            </label>
+
+
+            <label>
+
+                URL
+
+                <input
+                    id="asset-url-input"
+                    type="url"
+                    placeholder="https://">
+
+            </label>
+
+
+            <label>
+
+                内容
+
+                <textarea
+                    id="asset-content-input"
+                    placeholder="この資料についてのメモを書きましょう。">
+                </textarea>
+
+            </label>
+
+        </div>
+
+
+        <footer class="modal-footer">
+
+            <button
+                id="cancel-asset-button"
+                type="button">
+
+                キャンセル
+
+            </button>
+
+
+            <button
+                id="create-asset-button"
+                class="primary-button"
+                type="button">
+
+                保存
+
+            </button>
+
+        </footer>
+
+    </div>
+
+</div>
+        
+    <!-- =============================================
+         New Project Modal
+    ============================================== -->
+
+    <div
+        id="new-project-modal"
+        class="modal hidden">
+
+        <div class="modal-window">
+
+            <header class="modal-header">
+
+                <h2>
+
+                    📚 新しい創作
+
+                </h2>
+
+                <button
+                    id="close-modal-button"
+                    class="icon-button"
+                    type="button">
+
+                    ✕
+
+                </button>
+
+            </header>
+
+            <div class="modal-body">
+
+                <label>
+
+                    タイトル
+
+                    <input
+                        type="text"
+                        id="project-title-input"
+                        placeholder="例：星の残響">
+
+                </label>
+
+                <label>
+
+                    サブタイトル
+
+                    <input
+                        type="text"
+                        id="project-subtitle-input"
+                        placeholder="任意">
+
+                </label>
+
+                <label>
+
+                    概要
+
+                    <textarea
+                        id="project-description-input"
+                        rows="5"
+                        placeholder="作品の説明を書きましょう。"></textarea>
+
+                </label>
+
+                <label>
+
+                    テーマカラー
+
+                    <input
+                        type="color"
+                        id="project-color-input"
+                        value="#365A46">
+
+                </label>
+
+            </div>
+
+            <footer class="modal-footer">
+
+                <button
+                    id="cancel-project-button"
+                    type="button">
+
+                    キャンセル
+
+                </button>
+
+                <button
+                    id="create-project-button"
+                    class="primary-button"
+                    type="button">
+
+                    📚 作成
+
+                </button>
+
+            </footer>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+ <!-- =============================================
+         New Project Modal
+    ============================================== -->
+
+<div
+    id="settings-modal"
+    class="modal hidden">
+
+    <div class="modal-window">
+
+        <header class="modal-header">
+
+            <h2>
+
+                ⚙ 設定
+
+            </h2>
+
+        </header>
+
+
+       <div class="modal-body">
+
+    <h3>
+        🎨 表示設定
+    </h3>
+
+
+   <label>
+
+    テーマ
+
+   <select
+    id="theme-select">
+
+    <option value="default">
+        🌿 Archivum
+    </option>
+
+    <option value="dark">
+        🌑 ダーク
+    </option>
+
+    <option value="pastel-blue">
+        ☁️ Pastel Blue
+    </option>
+
+</select>
+
+</label>
+
+
+<label>
+
+    アクセントカラー
+
+    <input
+        id="accent-color-input"
+        type="color"
+        value="#6c63ff">
+
+</label>
+
+
+    <h3>
+        💾 データ管理
+    </h3>
+
+
+    <button
+        id="export-data-button"
+        type="button">
+
+        📤 データを書き出す
+
+    </button>
+
+
+    <button
+        id="import-data-button"
+        type="button">
+
+        📥 データを読み込む
+
+    </button>
+
+
+    <input
+        id="import-file-input"
+        type="file"
+        accept=".json"
+        hidden>
+
+</div>
+
+
+        <footer class="modal-footer">
+
+            <button
+                id="close-settings-button"
+                type="button">
+
+                閉じる
+
+            </button>
+
+        </footer>
+
+    </div>
+
+</div>
+    
+
+<!-- =============================================
+     JavaScript
+============================================= -->
+
+<script
+    src="js/app.js"
+    defer>
+</script>
+
+</body>
+
+</html>

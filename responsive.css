@@ -1,0 +1,194 @@
+/* ==========================================
+   Archivum
+   Responsive
+========================================== */
+
+
+/* ==========================================
+   iPad / Tablet
+========================================== */
+
+@media (max-width: 1024px) {
+
+    #app-header {
+
+        padding:
+            0 18px;
+
+    }
+
+
+    #app-sidebar {
+
+        width:
+            220px;
+
+    }
+
+
+    #app-workspace {
+
+        padding:
+            20px;
+
+    }
+
+
+    .brand-subtitle {
+
+        display:
+            none;
+
+    }
+
+
+    .header-search {
+
+        max-width:
+            320px;
+
+    }
+
+}
+
+
+/* ==========================================
+   iPad Portrait / Small Tablet
+========================================== */
+
+@media (max-width: 768px) {
+
+    #app-header {
+
+        height:
+            auto;
+
+        min-height:
+            64px;
+
+        padding:
+            10px 14px;
+
+        gap:
+            10px;
+
+    }
+
+
+    .header-brand {
+
+        flex:
+            1;
+
+    }
+
+
+    .header-search {
+
+        order:
+            3;
+
+        flex-basis:
+            100%;
+
+        width:
+            100%;
+
+        max-width:
+            none;
+
+    }
+
+
+    #app-header {
+
+        flex-wrap:
+            wrap;
+
+    }
+
+
+    #app-layout {
+
+        flex:
+            1;
+
+    }
+
+
+    #app-sidebar {
+
+        width:
+            180px;
+
+    }
+
+
+    #app-workspace {
+
+        padding:
+            16px;
+
+    }
+
+
+    .project-meta {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .modal-window {
+
+        width:
+            92vw;
+
+        max-width:
+            560px;
+
+    }
+
+}
+
+
+/* ==========================================
+   Phone
+========================================== */
+
+@media (max-width: 600px) {
+
+    #app-sidebar {
+
+        display:
+            none;
+
+    }
+
+
+    #app-workspace {
+
+        padding:
+            14px;
+
+    }
+
+
+    .header-actions
+    .primary-button {
+
+        padding:
+            0 12px;
+
+    }
+
+
+    .project-header h2 {
+
+        font-size:
+            20px;
+
+    }
+
+}
